@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/29 02:08:13 by abazerou          #+#    #+#             */
-/*   Updated: 2022/12/29 02:08:17 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/12/29 03:46:45 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,7 @@ char    *left_line(char *save)
     len = ft_strlen(save) - i;
     res = malloc(sizeof(char) * len + 1);
     if(!res)
-        return (free(save), NULL);
+        return (NULL);
     while(save[i])
     {
         res[j++] = save[i++];
@@ -105,24 +105,24 @@ char *get_next_line(fd)
 		return (NULL);
     res = first_line(save);
     if (!res || res[0] == '\0')
-		return (NULL);
+		return (free(res), free(save), NULL);
     save = left_line(save);
     return(res); 
 }
 
-int main()
-{
-    int fd;
+// int main2()
+// {
+//     int fd;
 
-    fd = open("test.txt", O_RDONLY);
-    printf("%s", get_next_line(fd));
-    // printf("%s", get_next_line(fd));
-    // printf("%s", get_next_line(fd));
-    // printf("%s", get_next_line(fd));
-    // printf("%s", get_next_line(fd));
-    // printf("%s", get_next_line(fd));
-    return (0);
-}
+//     fd = open("test.txt", O_RDONLY);
+//     printf("%s", get_next_line(fd));
+//     // printf("%s", get_next_line(fd));
+//     // printf("%s", get_next_line(fd));
+//     // printf("%s", get_next_line(fd));
+//     // printf("%s", get_next_line(fd));
+//     // printf("%s", get_next_line(fd));
+//     return (0);
+// }
 
 // int main()
 // {
