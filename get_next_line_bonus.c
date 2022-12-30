@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/29 22:30:25 by abazerou          #+#    #+#             */
-/*   Updated: 2022/12/30 01:26:35 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/12/30 20:12:08 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,7 +103,7 @@ char *get_next_line(fd)
         return (NULL);
     save[fd] = read_line(save[fd], fd);
     if (!save[fd])
-		return (NULL);
+		return (NULL);                  
     res = first_line(save[fd]);
     if (!res || res[0] == '\0')
 		return (free(res), free(save[fd]), NULL);
@@ -117,16 +117,51 @@ char *get_next_line(fd)
 //     int fd2;
 //     int fd3;
 //     int fd4;
-
+//     int fd5;
+//     int fd6;
+//     int fd7;
+//     int fd8;
+//     int fd9;
+//     int fd10;
+//     int fd11;
+//     int fd12;
+//     int fd13;
+//     int fd14;
+//     int fd15;
+//     int fd16;
+    
 //     fd = open("test.txt", O_RDONLY);
 //     fd2 = open("test.txt", O_RDONLY);
 //     fd3 = open("test.txt", O_RDONLY);
 //     fd4 = open("test.txt", O_RDONLY);
+//     fd5 = open("test.txt", O_RDONLY);
+//     fd6 = open("test.txt", O_RDONLY);
+//     fd7 = open("test.txt", O_RDONLY);
+//     fd8 = open("test.txt", O_RDONLY);
+//     fd9 = open("test.txt", O_RDONLY);
+//     fd10 = open("test.txt", O_RDONLY);
+//     fd11 = open("test.txt", O_RDONLY);
+//     fd12 = open("test.txt", O_RDONLY);
+//     fd13 = open("test.txt", O_RDONLY);
+//     fd14 = open("test.txt", O_RDONLY);
+//     fd15 = open("test.txt", O_RDONLY);
+//     fd16 = open("test.txt", O_RDONLY);
+    
 //     printf("%s", get_next_line(fd));
 //     printf("%s", get_next_line(fd2));
 //     printf("%s", get_next_line(fd3));
 //     printf("%s", get_next_line(fd4));
-//     // printf("%s", get_next_line(fd));
-//     // printf("%s", get_next_line(fd));
+//     printf("%s", get_next_line(fd5));
+//     printf("%s", get_next_line(fd6));
+//     printf("%s", get_next_line(fd7));
+//     printf("%s", get_next_line(fd8));
+//     printf("%s", get_next_line(fd9));
+//     printf("%s", get_next_line(fd10));
+//     printf("%s", get_next_line(fd11));
+//     printf("%s", get_next_line(fd12));
+//     printf("%s", get_next_line(fd13));
+//     printf("%s", get_next_line(fd14));
+//     printf("%s", get_next_line(fd15));
+//     printf("%s", get_next_line(fd16));
 //     return (0);
 // }

@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/29 02:08:13 by abazerou          #+#    #+#             */
-/*   Updated: 2022/12/30 01:26:38 by abazerou         ###   ########.fr       */
+/*   Updated: 2022/12/30 22:47:34 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,23 +114,23 @@ char *get_next_line(fd)
 // int main()
 // {
 //     int fd;
-//     int fd2;
-//     int fd3;
+//     // int fd2;
+//     // int fd3;
 
 //     fd = open("test.txt", O_RDONLY);
-//     fd2 = open("test.txt", O_RDONLY);
-//     fd3 = open("test.txt", O_RDONLY);
+//     // fd2 = open("test.txt", O_RDONLY);
+//     // fd3 = open("test.txt", O_RDONLY);
 //     printf("%s", get_next_line(fd));
-//     printf("%s", get_next_line(fd2));
-//     printf("%s", get_next_line(fd3));
+//     printf("%s", get_next_line(fd));
+//     printf("%s", get_next_line(fd));
 //     // printf("%s", get_next_line(fd));
 //     // printf("%s", get_next_line(fd));
 //     // printf("%s", get_next_line(fd));
 //     return (0);
 // }
 
-// int main()
-// {
-//     main2();
-//     system("leaks a.out");
-// }
+// // int main()
+// // {
+// //     main2();
+// //     system("leaks a.out");
+// // }
