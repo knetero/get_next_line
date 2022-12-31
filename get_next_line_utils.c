@@ -6,7 +6,7 @@
 /*   By: abazerou <abazerou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/27 17:28:05 by abazerou          #+#    #+#             */
-/*   Updated: 2022/12/29 20:29:46 by abazerou         ###   ########.fr       */
+/*   Updated: 2023/01/01 00:02:14 by abazerou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_strdup(char *s)
 {
 	char	*p;
 	int		i;
-	
+
 	i = 0;
 	p = (char *)malloc(ft_strlen(s) * sizeof(char) + 1);
 	if (!p)
@@ -42,7 +42,7 @@ char	*ft_strdup(char *s)
 
 char	*ft_strjoin(char *s1, char *s2)
 {
-    int		i;
+	int		i;
 	int		x;
 	char	*str;
 
@@ -54,7 +54,7 @@ char	*ft_strjoin(char *s1, char *s2)
 		return (NULL);
 	str = malloc((ft_strlen(s1) + ft_strlen(s2) +1) * sizeof(char));
 	if (!str)
-		 return (NULL);
+		return (NULL);
 	while (s1[i])
 	{
 		str[i] = s1[i];
