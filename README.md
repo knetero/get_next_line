@@ -1,13 +1,11 @@
- - Reading a line from a fd is way too tedious
+
+## Get_Next_Line
 
 
-                  Summary:
-This project is about programming a function that returns a line
-                 read from a file descriptor.
-                 
-                    Goals:
-This project will not only allow you to add a very convenient function to your collection,
-but it will also make you learn a highly interesting new concept in C programming: static
-variables.
-
-
+This projects is about creating a function that, allows to read a line ending
+with a newline character ('\\n') from a file descriptor, without knowing its
+size beforehand. One of the goal of this project is to learn a highly
+interesting new concept in C programming: static variables, and to gain a deeper
+understanding of allocations, whether they happen on the stack memory or in the
+heap memory, the manipulation and the life cycle of a buffer, the unexpected
+complexity implied in the use of one or many static variables.
